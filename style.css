@@ -1,0 +1,64 @@
+/*membuat konten berada di tengah*/
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/*pemilihan jenis font*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*memposisikan tulisan judul berada di tengah dan memberi jarak setinggi 40px di bawah tulisan judul*/
+h1 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*membuat kotak formulir untuk kalulator*/
+form {
+    margin-top: 5%; /*memberi ruang di atas kotak formulir kalkulator setinggi 5% dari tampilan layar pengguna*/
+    padding: 30px; /*memberi ruang di atas tulisan judul setinggi 30px*/
+    width: fit-content; /*membuat kotak yang lebarnya dapat menyesuiakan dengan ukuran isi konten*/
+    color: white; /*setting tulisan warna putih*/
+    background-color: #4d8aae; /*setting warna background kotak formulir dengan warna demikian8/
+    box-shadow: 0px 0px 12px #4d8aae ; /*membuat bayangan kotak formulir*/
+    border-radius: 10px; /*membuat sudut kotak formulir beradius*/
+    padding-bottom: 25px; /*memberi ruang setinggi 25px di bawah konten terakhir dalam kotak formulir*/
+}
+
+/*mendesain kotak input*/
+input {
+    height: 30px; /*setting kotak input setinggi 30px*/
+    border: none; /*setting kotak input tanpa border*/
+    border-radius: 5px; /*membuat sudut kotak input beradius*/
+    background-color: white; /*setting kotak input berwarna putih*/
+    margin-bottom: 15px; /*memberi jarak setinggi 15px di setiap kotak input*/
+    color: #274d7c; /*setting tulisan dalam kotak input berwarna demikian*/
+    padding-left: 2.5%; /*memberi jarak selebar 2.5% dari lebar kotak formulir sebelum tulisan tercetak di kotak input*/
+    width: 97.5%; /*setting kotak input selebar 97.5% dari lebar kotak formulir*/
+}
+
+/*memposisikan tombol operasi agar rapi*/
+.tombol-operasi {
+    display: flex; /*mengatur tombol-tombol operasi dengan flexbox*/
+    justify-content: space-between; /*memberi jarak antar tombol operasi*/
+}
+
+/*mengatur desain tiap tombol operasi*/
+.operasi {
+    width: 24%; /*setting tiap tombol selebar 24% dari lebar kotak formulir*/
+    background-color: #274d7c; /*setting warna tombol sedemikian rupa*/
+    color: white; /*setting warna putih untuk karakter di dalam tombol*/
+}
+
+/*saat cursor berada di atas tombol operasi, maka tombol tersebut akan memiliki efek bayangan putih*/
+.operasi:hover {
+    box-shadow: 0px 0px 4px white;
+}
+
+/*saat tombol diklik, maka warna tombol akan berubah sedemikian rupa*/
+.operasi:active {
+    background-color: #3163a0;
+}

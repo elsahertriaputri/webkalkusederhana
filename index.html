@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--header file html-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--membuat website responsive pada setiap device-->
+    <title>Kalkulator Sederhana</title> <!--judul halaman web-->
+    <link rel="stylesheet" href="style.css"> <!--menghubungkan file style.css-->
+    <script src="script.js"></script> <!--menghubungkan file script.js-->
+</head>
+
+<!--bagian body html-->
+<body>
+
+    <!--membungkus seluruh content dalam main-->
+    <div class="main">
+
+        <!--membuat form untuk memposisikan kalkulator sederhana-->
+        <form method="POST" name="kirim">
+            <h1>Kalkulator Sederhana</h1> <!--judul program kalkulator sederhana-->
+
+            <!--membuat bagian input untuk bilangan pertama-->
+            <div class="bil1">
+                <p>Masukan bilangan pertama :</p>
+                <input type="number" name="B1" size="20" class="input">
+            </div>
+
+            <!--membuat bagian input untuk bilangan kedua-->
+            <div class="bil2">
+                <p>Masukan bilangan kedua :</p>
+                <input type="number" name="B2" size="20" class="input">
+            </div>
+
+            <!--membuat bagian untuk tombol operasi-->
+            <div>
+                <p>Pilih operasi matematika</p>
+                <div class="tombol-operasi">
+                    <input type="button" value="+" class="operasi" onclick=tambah()>
+                    <input type="button" value="-" class="operasi" onclick=kurang()>
+                    <input type="button" value="*" class="operasi" onclick=kali()>
+                    <input type="button" value="/" class="operasi" onclick=bagi()>
+                </div>
+            </div>
+
+            <!--membuat bagian untuk menampilkan hasil perhitungan-->
+            <div class="hasil">
+                <p>Hasil penghitungan :</p>
+                <input type="text" name="HASIL" size="20" class="display-hasil" readonly>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
